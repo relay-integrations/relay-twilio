@@ -6,7 +6,7 @@ Integration with Twilio, mostly for notifications.
 
 |   Type    |  Name              | Description          |
 |-----------|--------------------|----------------------|
-| Step      | [twilio-send-sms](/steps/send-sms) | Send an SMS using Twilio | 
+| Step      | [twilio-step-send-sms](/steps/twilio-step-send-sms) | Send an SMS using Twilio | 
 
 ## Contributing
 
