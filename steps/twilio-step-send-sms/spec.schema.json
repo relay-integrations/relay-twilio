@@ -17,8 +17,8 @@
         }
       },
       "required": [
-        "access", 
-        "secretAccessKey"
+        "accountSID", 
+        "authToken"
       ]
     },
     "from": {
