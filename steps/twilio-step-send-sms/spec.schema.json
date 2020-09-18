@@ -1,0 +1,44 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "twilio": {
+      "type": "object",
+      "description": "A mapping of Twilio account configuration.",
+      "properties": {
+        "accountSID": {
+          "type": "string",
+          "description": "Twilio account SID. Use the Secrets sidebar to configure as Secret."
+        },
+        "authToken": {
+          "type": "string",
+          "description": "Twilio auth token. Use the Secrets sidebar to configure as Secret."
+        }
+      },
+      "required": [
+        "accountSID", 
+        "authToken"
+      ]
+    },
+    "from": {
+      "type": "string",
+      "description": "Phone number to send from."
+    },
+    "to": {
+      "type": "string",
+      "description": "Phone number to send to."
+    },
+    "body": {
+      "type": "string",
+      "description": "Message body"
+    }
+  },
+  "required": [
+    "twilio",
+    "from",
+    "to",
+    "body"
+  ],
+  "additionalProperties": false
+}
