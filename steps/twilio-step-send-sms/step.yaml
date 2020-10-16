@@ -34,15 +34,15 @@ build:
 publish:
   repository: relaysh/twilio-step-send-sms
 
-schemas: 
+schemas:
   spec:
     source: file
-    file: spec.schema.json 
+    file: spec.schema.json
 
 examples:
 - summary: Send an SMS message using Twilio
-  content: 
-    apiVersion: 1
+  content:
+    apiVersion: v1
     kind: Step
     name: notify-via-twilio
     image: relaysh/twilio-step-send-sms
