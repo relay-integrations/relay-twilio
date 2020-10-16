@@ -38,3 +38,18 @@ schemas:
   spec:
     source: file
     file: spec.schema.json 
+
+examples:
+- summary: Send an SMS message using Twilio
+  content: 
+    apiVersion: 1
+    kind: Step
+    name: notify-via-twilio
+    image: relaysh/twilio-step-send-sms
+    spec:
+      twilio:
+        accountSID: !Secret twilioAccountSID
+        authToken: !Secret twilioAuthToken
+      from: !Secret twilioPhoneNumber
+      to: !Parameter phoneNumber
+      body: !Parameter message
