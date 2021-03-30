@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/puppetlabs/nebula-sdk/pkg/taskutil"
+	"github.com/puppetlabs/relay-sdk-go/pkg/taskutil"
 
 	"github.com/relay-integrations/relay-twilio/actions/steps/send-sms/pkg/logs"
 	"github.com/relay-integrations/relay-twilio/actions/steps/send-sms/pkg/twilio"
