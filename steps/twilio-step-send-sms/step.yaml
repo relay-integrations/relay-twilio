@@ -18,7 +18,7 @@ summary: Send a SMS message using Twilio
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: This step will send a SMS message using Twilio.
+description: Sends a SMS message using Twilio.
 
 # The mechanism to use to construct this step. Required. Must be an action
 # builder. See the Builders section below.
