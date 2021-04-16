@@ -27,7 +27,7 @@ type Spec struct {
 	To string `spec:"to"`
 
 	// This is the actual message that we should send.
-	Body string `spect:"body"`
+	Body string `spec:"body"`
 }
 
 func main() {
